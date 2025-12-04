@@ -44,6 +44,7 @@ aws ec2 create-subnet --vpc-id $vpc_id --cidr-block $cidrblock --availability-zo
 ## Use the --map-public-ip-on-launch flag on the aws ec2 create-subnet command to auto-assign public IPs to instances launched in the subnet
 
 aws ec2 create-vpc-endpoint --vpc-id $vpc_id --service-name com.amazonaws.us-east-1.dynamodb --route-table-ids $route_table_ids --vpc-endpoint-type Gateway
+aws ec2 create-internet-gateway
 aws ec2 attach-internet-gateway --vpc-id $vpc_id --internet-gateway-id $gateway_id
 
 aws ec2 create-security-group --group-name $name --description "Security group for Lambda function" --vpc-id $vpc_id
