@@ -1,4 +1,4 @@
-dynamodb-table
+### dynamodb-table
 {
     "Table": {
         "AttributeDefinitions": [
