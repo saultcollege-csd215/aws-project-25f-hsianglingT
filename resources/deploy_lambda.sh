@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # --- Configuration ---
-LAMBDA_NAME="<the name of your lambda function>"
+LAMBDA_NAME="csd215-lambda"
 REGION="us-east-1"
 ROOT=.
 SOURCE_DIR="$ROOT/app"
