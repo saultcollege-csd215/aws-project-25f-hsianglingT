@@ -14,4 +14,4 @@ jobs:
           host: 44.220.141.7
           username: ec2-user
           key: ${{ secrets.EC2_KEY }}
-          script_path: resources/deploy_ec2.sh
+          script_path: dice/resources/deploy_ec2.sh
