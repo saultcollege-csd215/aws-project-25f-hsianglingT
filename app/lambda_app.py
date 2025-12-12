@@ -1,7 +1,7 @@
 import json
 import app.core as core
 import app.data as data
-
+# Lambda
 def response(status_code, body):
     return {
         'statusCode': status_code,
